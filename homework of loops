@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter either 1 or 0 ");
+        int num = sc.nextInt();
+        if(num == 0){
+            System.out.println("thank you exit");
+        }
+        if(num==1) {
+
+            do {
+                System.out.println("enter marks");
+                int marks = sc.nextInt();
+                if (marks >= 90)
+                    System.out.println("this is good");
+                else if (marks < 89 && marks > 60)
+                    System.out.println("this is also good only");
+                else if (marks < 59 && marks > 0)
+                    System.out.println("this is still good dont worry");
+                else
+                    System.out.println("enter number between 0 and 100");
+            } while (num != 0);
+        }
+
+    }
+}
