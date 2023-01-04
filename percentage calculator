@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class MainOractice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the tottal marks for all 5 subs");
+        int tot=sc.nextInt();
+        System.out.println("enter the marks of the 5 subjects");
+        int sub1 = sc.nextInt();
+        int sub2 = sc.nextInt();
+        int sub3 = sc.nextInt();
+        int sub4 = sc.nextInt();
+        int sub5 = sc.nextInt();
+        long per = ((sub1+sub2+sub3+sub4+sub5)/tot)*100;
+        System.out.println("your percentage is = " + per);
+    }
+}
